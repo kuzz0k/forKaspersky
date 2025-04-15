@@ -1,0 +1,137 @@
+:root {
+  background-color: #0d1117;
+  margin: 0;
+  color: #8b949e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-block {
+  width: 800px;
+  background-color: #0d1117;
+  border: solid 1px #8b949e;
+  border-radius: 10px;
+  color: #8b949e;
+
+  .white {
+    color: white;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .header-left {
+      display: flex;
+      gap: 15px;
+    }
+
+    .header-right {
+      display: flex;
+      gap: 5px;
+    }
+
+    .news-block__date,
+    .news-block__reach {
+      font-size: 13px;
+      color: #8b949e;
+    }
+
+    .news-block__sentiment {
+      font-weight: bold;
+      border-radius: 6px;
+      padding: 0 8px;
+
+      &--positive {
+        color: #3fb950;
+        background: rgba(63, 185, 80, 0.15);
+      }
+
+      &--negative {
+        color: #f85149;
+        background: rgba(248, 81, 73, 0.15);
+      }
+
+      &--neutral {
+        color: #c9d1d9;
+        background: rgba(110, 118, 129, 0.15);
+      }
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 15px;
+    color: #58a6ff;
+    font-weight: 500;
+    margin-bottom: 4px;
+
+    svg {
+      margin-left: 4px;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #8b949e;
+    margin-bottom: 8px;
+
+    img {
+      height: 14px;
+    }
+  }
+
+  &__content {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 8px;
+
+    .news-block__show-more {
+      color: #58a6ff;
+      font-size: 13px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 20px;
+
+    .ant-tag {
+      background-color: #0d1117;
+      border: solid 1px #8b949e;
+      color: #8b949e;
+      font-size: 13px;
+      padding: 4px 8px;
+      border-radius: 15px;
+    }
+
+    .news-block__show-all {
+      padding: 0;
+      height: auto;
+      line-height: 1;
+      font-size: 13px;
+      color: #58a6ff;
+    }
+  }
+
+  &__source-link {
+    background-color: #30363d;
+    border: none;
+    color: #c9d1d9;
+    font-size: 13px;
+    padding: 5px 8px;
+    border-radius: 6px;
+  }
+
+  &__duplicates-summary {
+    margin: 20px 0;
+  }
+}
